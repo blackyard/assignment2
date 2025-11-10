@@ -184,29 +184,7 @@ GET /walker/generate_docs.get_result?task_id=abc-123
    - `Jac: Build` - Compile JAC modules
    - `Jac: Serve` - Start backend server
    - `Frontend: Streamlit` - Start web interface
-   - `Smoke: Run checks` - System validation
-
-### Testing
-
-```powershell
-# Run smoke tests
-jac-env\Scripts\python.exe scripts\smoke_checks.py
-
-# Run end-to-end tests
-jac-env\Scripts\python.exe scripts\e2e_generate_docs.py
-
-# Run linting (optional)
-jac-env\Scripts\python.exe -m ruff check .
-jac-env\Scripts\python.exe -m mypy py_modules/
-```
-
-### Code Quality
-
-The project includes optional linting and type checking:
-
-- **Ruff**: Fast Python linter
-- **MyPy**: Static type checker
-
+  
 ## 📊 Performance
 
 ### Benchmarks
