@@ -1,0 +1,49 @@
+[
+  {
+    "path": "orders.jac",
+    "language": "jac",
+    "relationships": {
+      "calls": [
+        "Model",
+        "OrderAgent",
+        "generate_order_status",
+        "input",
+        "llm",
+        "order_stage",
+        "print"
+      ],
+      "inherits": [],
+      "functions": [],
+      "classes": []
+    }
+  },
+  {
+    "path": "orders.py",
+    "language": "python",
+    "relationships": {
+      "calls": [
+        "RestaurantOrder",
+        "__init__",
+        "append",
+        "display_history",
+        "get_status",
+        "localtime",
+        "print",
+        "sleep",
+        "strftime",
+        "time",
+        "update_status"
+      ],
+      "inherits": [],
+      "functions": [
+        "__init__",
+        "display_history",
+        "get_status",
+        "update_status"
+      ],
+      "classes": [
+        "RestaurantOrder"
+      ]
+    }
+  }
+]

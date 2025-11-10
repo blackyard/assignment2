@@ -1,0 +1,24 @@
+// Code Context Graph
+digraph {
+	rankdir=LR size="12,8"
+	"orders.jac" [label="orders.jac\n(0 functions)" fillcolor=lightgreen shape=ellipse style=filled]
+	"orders.py" [label="orders.py\n(1 classes, 4 functions)" fillcolor=lightblue shape=box style=filled]
+	"orders.jac" -> Model [label=calls arrowhead=normal color=blue]
+	"orders.jac" -> OrderAgent [label=calls arrowhead=normal color=blue]
+	"orders.jac" -> generate_order_status [label=calls arrowhead=normal color=blue]
+	"orders.jac" -> input [label=calls arrowhead=normal color=blue]
+	"orders.jac" -> llm [label=calls arrowhead=normal color=blue]
+	"orders.jac" -> order_stage [label=calls arrowhead=normal color=blue]
+	"orders.jac" -> print [label=calls arrowhead=normal color=blue]
+	"orders.py" -> RestaurantOrder [label=calls arrowhead=normal color=blue]
+	"orders.py" -> __init__ [label=calls arrowhead=normal color=blue]
+	"orders.py" -> append [label=composes arrowhead=diamond color=purple style=dashed]
+	"orders.py" -> display_history [label=composes arrowhead=diamond color=purple style=dashed]
+	"orders.py" -> get_status [label=composes arrowhead=diamond color=purple style=dashed]
+	"orders.py" -> localtime [label=composes arrowhead=diamond color=purple style=dashed]
+	"orders.py" -> print [label=composes arrowhead=diamond color=purple style=dashed]
+	"orders.py" -> sleep [label=composes arrowhead=diamond color=purple style=dashed]
+	"orders.py" -> strftime [label=composes arrowhead=diamond color=purple style=dashed]
+	"orders.py" -> time [label=composes arrowhead=diamond color=purple style=dashed]
+	"orders.py" -> update_status [label=composes arrowhead=diamond color=purple style=dashed]
+}
