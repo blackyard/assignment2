@@ -1,0 +1,8 @@
+jaseci
+streamlit
+tree_sitter
+gitpython
+networkx
+Markdown 
+graphviz
+python-dotenv
